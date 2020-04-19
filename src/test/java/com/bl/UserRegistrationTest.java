@@ -46,6 +46,18 @@ public class UserRegistrationTest {
         Assert.assertFalse(userRegistration.validateNumber("91 86523453747"));
     }
 
+    @Test
+    public void givenPassword_ShouldReturnTrue() {
+        UserRegistration userRegistration = new UserRegistration();
+        Assert.assertTrue(userRegistration.validatePassword("abcdefgh"));
+    }
+
+    @Test
+    public void givenPassword_ShouldReturnFalse() {
+        UserRegistration userRegistration = new UserRegistration();
+        Assert.assertFalse(userRegistration.validatePassword("abcdh"));
+    }
+
     public static void main(String[] args){
         UserRegistrationTest userRegistrationTest = new UserRegistrationTest();
         userRegistrationTest.givenName_WhenFirstName_ShouldReturnFalse();
@@ -54,5 +66,7 @@ public class UserRegistrationTest {
         userRegistrationTest.givenName_WhenLastName_ShouldReturnTrue();
         userRegistrationTest.givenEmail_ShouldReturnFalse();
         userRegistrationTest.givenEmail_ShouldReturnTrue();
+        userRegistrationTest.givenPassword_ShouldReturnFalse();
+        userRegistrationTest.givenPassword_ShouldReturnTrue();
     }
 }
