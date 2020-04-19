@@ -49,13 +49,13 @@ public class UserRegistrationTest {
     @Test
     public void givenPassword_ShouldReturnTrue() {
         UserRegistration userRegistration = new UserRegistration();
-        Assert.assertTrue(userRegistration.validatePassword("abcdefgh"));
+        Assert.assertTrue(userRegistration.validatePassword("aBcdefgh"));
     }
 
     @Test
     public void givenPassword_ShouldReturnFalse() {
         UserRegistration userRegistration = new UserRegistration();
-        Assert.assertFalse(userRegistration.validatePassword("abcdh"));
+        Assert.assertFalse(userRegistration.validatePassword("abcdhhgy"));
     }
 
     public static void main(String[] args){
