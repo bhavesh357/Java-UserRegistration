@@ -35,6 +35,17 @@ public class UserRegistrationTest {
         Assert.assertFalse(userRegistration.validateEmail("abc.x@yz@bl.co.in"));
     }
 
+    @Test
+    public void givenNumber_ShouldReturnTrue() {
+        UserRegistration userRegistration = new UserRegistration();
+        Assert.assertTrue(userRegistration.validateNumber("91 8652453747"));
+    }
+    @Test
+    public void givenNumber_ShouldReturnFalse() {
+        UserRegistration userRegistration = new UserRegistration();
+        Assert.assertFalse(userRegistration.validateNumber("91 86523453747"));
+    }
+
     public static void main(String[] args){
         UserRegistrationTest userRegistrationTest = new UserRegistrationTest();
         userRegistrationTest.givenName_WhenFirstName_ShouldReturnFalse();
