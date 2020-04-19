@@ -9,19 +9,30 @@ public class UserRegistrationTest {
         UserRegistration userRegistration = new UserRegistration();
         Assert.assertTrue(userRegistration.validateName("Bhavesh"));
     }
-
+    @Test
     public void givenName_WhenFirstName_ShouldReturnFalse() {
         UserRegistration userRegistration = new UserRegistration();
         Assert.assertFalse(userRegistration.validateName("bhaVesh"));
     }
+    @Test
     public void givenName_WhenLastName_ShouldReturnTrue() {
         UserRegistration userRegistration = new UserRegistration();
         Assert.assertTrue(userRegistration.validateName("Kadam"));
     }
-
+    @Test
     public void givenName_WhenLastName_ShouldReturnFalse() {
         UserRegistration userRegistration = new UserRegistration();
         Assert.assertFalse(userRegistration.validateName("kadam"));
+    }
+    @Test
+    public void givenEmail_ShouldReturnTrue() {
+        UserRegistration userRegistration = new UserRegistration();
+        Assert.assertTrue(userRegistration.validateEmail("abc.xyz@bl.co.in"));
+    }
+    @Test
+    public void givenEmail_ShouldReturnFalse() {
+        UserRegistration userRegistration = new UserRegistration();
+        Assert.assertFalse(userRegistration.validateEmail("abc.x@yz@bl.co.in"));
     }
 
     public static void main(String[] args){
@@ -30,5 +41,7 @@ public class UserRegistrationTest {
         userRegistrationTest.givenName_WhenFirstName_ShouldReturnTrue();
         userRegistrationTest.givenName_WhenLastName_ShouldReturnFalse();
         userRegistrationTest.givenName_WhenLastName_ShouldReturnTrue();
+        userRegistrationTest.givenEmail_ShouldReturnFalse();
+        userRegistrationTest.givenEmail_ShouldReturnTrue();
     }
 }
