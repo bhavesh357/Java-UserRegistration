@@ -49,7 +49,7 @@ public class UserRegistrationTest {
     @Test
     public void givenPassword_ShouldReturnTrue() {
         UserRegistration userRegistration = new UserRegistration();
-        Assert.assertTrue(userRegistration.validatePassword("aBc7defgh"));
+        Assert.assertTrue(userRegistration.validatePassword("aBc7@defgh"));
     }
 
     @Test
