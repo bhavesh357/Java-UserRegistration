@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.bl.UserRegistrationTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-04-20T18:06:05" hostname="SHIVAM-PC" time="0.019">
+  <properties/>
+  <testcase name="givenLastName_WhenValid_ShouldReturnTrue" classname="com.bl.UserRegistrationTest" time="0.005"/>
+  <testcase name="givenFirstName_WhenInvalid_ShouldReturnFalse" classname="com.bl.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenPassword_WhenInvalid_ShouldReturnFalse" classname="com.bl.UserRegistrationTest" time="0.002"/>
+  <testcase name="givenFirstName_WhenValid_ShouldReturnTrue" classname="com.bl.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenPassword_WhenValid_ShouldReturnTrue" classname="com.bl.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenEmail_WhenValid_ShouldReturnTrue" classname="com.bl.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenEmail_WhenInvalid_ShouldReturnFalse" classname="com.bl.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenNumber_WhenValid_ShouldReturnTrue" classname="com.bl.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenNumber_WhenInvalid_ShouldReturnFalse" classname="com.bl.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenLastName_WhenInvalid_ShouldReturnFalse" classname="com.bl.UserRegistrationTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
